@@ -4,10 +4,6 @@
     <meta charset='utf-8'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- font Playfair Display-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <!-- font Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <!-- font Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!--bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -103,9 +103,59 @@
             width: 80%;
             margin-left: auto;
             margin-right: auto;
-            height: 500px;
             margin-top: 96px;
             margin-bottom: 96px;
+        }
+
+        .course {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+
+        .title {
+            width: 100%;
+        }
+
+        .title span {
+            font-family: 'Forum', serif;
+            font-size: 40px;
+        }
+        
+        .title p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+        }
+
+        .plate-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .plate {
+            width: 33%;
+        }
+
+        .plate-title {
+            font-family: 'Forum', serif;
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 12px;
+            display: block;
+        }
+
+        .plate p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            margin-top: 8px;
+        }
+
+        .price {
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
         }
 
         .footer {
@@ -182,11 +232,100 @@
 
     <div class="menu-background">
         <div class="menu-container">
-
+            <div class="course">
+                <div class="title">
+                    <span>Starters</span>
+                    <p>I’m a description. Click me and “Edit Menu” to open the Restaurant Menu editor and change my text.</p>
+                </div>
+                <div class="plate-container">
+                    <div class="plate">
+                        <span class="plate-title">Soup of the Day</span>
+                        <p>I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor 
+                            and change my text.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                    <div class="plate">
+                        <span class="plate-title">Seasonal Garden Salad</span>
+                        <p>I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor 
+                            and change my text.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                    <div class="plate">
+                        <span class="plate-title">Caesar Salad</span>
+                        <p>I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor 
+                            and change my text.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                </div>
+                <div class="plate-container">
+                    <div class="plate">
+                        <span class="plate-title">Endive & Roquefort Salad</span>
+                        <p>I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor 
+                            and change my text.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                    <div class="plate">
+                        <span class="plate-title">Salmon Carpaccio & Citrus Dressing</span>
+                        <p>I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor 
+                            and change my text.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                    <div class="plate">
+                        <span class="plate-title">Steak Tartare</span>
+                        <p>I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor 
+                            and change my text.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="course">
+                <div class="title">
+                    <span>Main Courses</span>
+                    <p>I’m a description. Click me and “Edit Menu” to open the Restaurant Menu editor and change my text.</p>
+                </div>
+                <div class="plate-container">
+                    <div class="plate">
+                        <span class="plate-title">White Fish Fillet & Mussels Stew</span>
+                        <p>I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor 
+                            and change my text.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                    <div class="plate">
+                        <span class="plate-title">Sirloin Steak & Grilled Asparagus</span>
+                        <p>I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor 
+                            and change my text.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                    <div class="plate">
+                        <span class="plate-title">Roasted Chicken with Garlic Cream</span>
+                        <p>I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor 
+                            and change my text.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                </div>
+                <div class="plate-container">
+                    <div class="plate">
+                        <span class="plate-title">Lawrence Burger 10oz</span>
+                        <p>I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor 
+                            and change my text.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                    <div class="plate">
+                        <span class="plate-title">Sweet Potato Ravioli</span>
+                        <p>I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor 
+                            and change my text.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                    <div class="plate">
+                        <span class="plate-title">Spinach Black Risotto</span>
+                        <p>I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor 
+                            and change my text.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
-   
 
     <div class="footer">
         <div class="info-container" id="contatti">
