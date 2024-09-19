@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- font Playfair Display-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- font Forum-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+    <!--bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        .navbar {
+            background-color: #F9F6EE !important;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        .navbar-brand {
+            font-family: 'Forum', serif;
+            font-size: 28px !important;
+            padding-left: 16px;
+            color: black;
+        }
+
+        .navbar-nav .nav-link {
+            color: black !important; /* Colore bianco per i link */
+            font-size: 22px !important;
+            font-family: 'Forum', serif;
+            margin-right: 24px;
+            transition: all 0.5s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #967969 !important;
+        }
+
+        body {
+            background-color: #F9F6EE;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        .top-bar {
+            height: 24px;
+            width: 100%;
+            background-color: #836a5c;
+        }
+
+        /******************/
+
+        .hero-container {
+            display: flex;
+        }
+
+        .text {
+            width: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            writing-mode: sideways-lr;
+            text-orientation: upright;
+            color: #836a5c;
+        }
+
+        .background {
+            width: 90%;
+            height: 700px;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-image: url(images/background.png);
+        }
+
+        .container-menu-image {
+            display: flex;
+            margin-top: 64px;
+        }
+
+        .menu-side, .img-side {
+            width: 50%;
+            height: 700px;
+        }
+
+        .menu-side {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .menu-side span {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+        }
+
+        .menu-side p {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            margin-top: 16px;
+        }
+
+        .img-side {
+            background-image: url(images/plate.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        button a {
+            text-decoration: none;
+            color: #F9F6EE;
+        }
+
+        button a:hover {
+            text-decoration: none;
+            color: #F9F6EE;
+        }
+
+        .menu-side button {
+            background-color: #836a5c;
+            border: none;
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            color: #F9F6EE;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            margin-top: 16px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        .menu-side button:hover {
+            background-color: #624c45;
+        }
+
+        .restaurant {
+            background-image: url(images/restaurant.jpeg);
+            height: 850px;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .restaurant .container {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 50%;
+            background-color: #F9F6EE;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .restaurant .container span {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            width: 45%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .restaurant .container p {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            margin-top: 16px;
+        }
+
+        .restaurant .container button {
+            background-color: #836a5c;
+            border: none;
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            color: #F9F6EE;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            margin-top: 16px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        .restaurant .container button:hover {
+            background-color: #624c45;
+        }
+
+        .footer {
+            background-color: black;
+            width: 100%;
+            height: 500px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .footer .info-container {
+            border-bottom: 2px solid #F9F6EE;
+            width: 90%;
+            height: 175px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            max-width: 900px;
+        }
+
+        .item {
+            width: fit-content;
+            color: #F9F6EE;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: 'Forum', serif;
+            margin-bottom: 16px;
+        }
+
+        .item-title {
+            font-size: 32px;
+        }
+
+        .item-info span {
+            display: block;
+            font-size: 24px;
+        }
+
+        /****************/
+
+    </style>
+</head>
+<body>
+
+    <div class="top-bar"></div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">R I S T O R A N T E</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#chi-siamo">Chi siamo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contatti">Contatti</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-container">
+        <div class="background">
+        </div>
+        <div class="text">
+            <span>Est. 2015</span>
+            <span>Restaurant & Bar</span>
+        </div>
+    </div>
+    
+    <div class="container-menu-image" id="menu-link">
+        <div class="menu-side">
+            <span>Made with love.</span>
+            <span>Simply delicious</span>
+            <p>I'm a paragraph. Click here to add your own text and edit me. 
+            I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <button><a href="menu.html">View Menù</a></button>
+        </div>
+        <div class="img-side">
+        </div>
+    </div>
+
+    <div class="restaurant">
+        <div class="container" id="chi-siamo">
+            <span>A Fresh and Seasonal Cuisine</span>
+            <p>I'm a paragraph. Click here to add your own text and edit me. 
+                I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <button><a href="menu.html"></a>About</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="info-container" id="contatti">
+            <div class="item">
+                <span class="item-title">Address</span>
+                <div class="item-info">
+                    <span>Via XXV Aprile, 9</span>
+                    <span>Carate Brianza, 20841</span>
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-title">Opening Hours</span>
+                <div class="item-info">
+                    <span>Lun - Ven: 18 - 23</span>
+                    <span>Sab - Dom: 18 - 00</span>
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-title">Contattaci</span>
+                <div class="item-info">
+                    <span>ristorante@info.com</span>
+                    <span>+39 345 642 5346</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JS di Bootstrap (in fondo al body per migliori performance) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
