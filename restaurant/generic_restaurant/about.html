@@ -2,12 +2,8 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>Restaurant | Home</title>
+    <title>Restaurant | About Us</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- font Playfair Display-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <!-- font Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <!-- font Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!--bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -67,156 +67,61 @@
 
         /******************/
 
-        .hero-container {
-            display: flex;
-        }
-
-        .text {
-            width: 10%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
-            padding-top: 16px;
-            padding-bottom: 16px;
-            writing-mode: sideways-lr;
-            text-orientation: upright;
-            color: #836a5c;
-        }
-
-        .background {
+        .title-container {
             width: 90%;
-            height: 700px;
+            height: 200px;
+            background-color: #836a5c;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .title-container span {
+            font-family: 'Forum', serif;
+            color: #F9F6EE;
+            font-size: 64px;
+            margin-left: 25%;
+        }
+
+        .about-background {
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
-            background-image: url(images/background.png);
-        }
-
-        .container-menu-image {
-            display: flex;
-            margin-top: 64px;
-        }
-
-        .menu-side, .img-side {
-            width: 50%;
-            height: 700px;
-        }
-
-        .menu-side {
-            text-align: center;
+            background: 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(images/about1.jpg);
+            background-size: cover;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
-        .menu-side span {
-            font-family: 'Playfair Display', serif;
-            font-size: 40px;
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #F9F6EE;
+            text-align: center;
+            margin-top: 120px;
+            margin-bottom: 120px;
         }
 
-        .menu-side p {
-            width: 50%;
+        .content span {
+            font-family: 'Forum', serif;
+            font-size: 48px;
+            font-weight: 500;
+        }
+
+        .content p {
+            max-width: 800px;
             margin-left: auto;
             margin-right: auto;
             font-family: 'Montserrat', sans-serif;
-            font-size: 16px;
-            margin-top: 16px;
+            margin-top: 12px;
         }
 
-        .img-side {
-            background-image: url(images/plate.png);
-            background-size: cover;
-            background-position: center;
-        }
-
-        .menu-side a {
-            background-color: #836a5c;
-            border: none;
-            width: 30%;
-            margin-left: auto;
-            margin-right: auto;
-            color: #F9F6EE;
-            padding-top: 16px;
-            padding-bottom: 16px;
-            font-family: 'Playfair Display', serif;
-            font-size: 18px;
-            margin-top: 16px;
-            cursor: pointer;
-            transition: all 0.5s ease;
-        }
-
-        .menu-side a:hover {
-            text-decoration: none;
-            color: #F9F6EE;
-            background-color: #624c45;
-        }
-
-        .restaurant {
-            background-image: url(images/restaurant.jpeg);
-            height: 850px;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .restaurant .container {
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-            height: 50%;
-            background-color: #F9F6EE;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-        }
-
-        .restaurant .container span {
-            font-family: 'Playfair Display', serif;
-            font-size: 36px;
-            width: 45%;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-
-        }
-        .restaurant .container p {
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 16px;
-            margin-top: 16px;
-        }
-
-        .restaurant .container a {
-            background-color: #836a5c;
-            border: none;
-            width: 30%;
-            margin-left: auto;
-            margin-right: auto;
-            color: #F9F6EE;
-            padding-top: 16px;
-            padding-bottom: 16px;
-            font-family: 'Playfair Display', serif;
-            font-size: 18px;
-            margin-top: 16px;
-            cursor: pointer;
-            transition: all 0.5s ease;
-            text-align: center;
-        }
-
-        .restaurant .container a:hover {
-            text-decoration: none;
-            color: #F9F6EE;
-            background-color: #624c45;
-        }
-
+        
         .footer {
             background-color: black;
             width: 100%;
@@ -257,6 +162,46 @@
             font-size: 24px;
         }
 
+        .kitchen {
+            width: 90%;
+            display: flex;
+            margin-top: 96px;
+            margin-bottom: 96px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 800px;
+        }
+
+        .img-side {
+            width: 40%;
+            background-image: url(images/about2.png);
+            background-size: cover;
+        }
+
+        .text-side {
+            width: 60%;
+            padding-left: 32px;
+            padding-right: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .text-side span {
+            font-family: 'Forum', serif;
+            font-size: 48px;
+            font-weight: 500;
+        }
+
+        .text-side p {
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 12px;
+        }
+
         /****************/
 
     </style>
@@ -266,14 +211,14 @@
     <div class="top-bar"></div>
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">R I S T O R A N T E</a>
+        <a class="navbar-brand" href="index.html">R I S T O R A N T E</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#menu-link">Menu</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#chi-siamo">Chi siamo</a>
@@ -285,33 +230,37 @@
         </div>
     </nav>
 
-    <div class="hero-container">
-        <div class="background">
-        </div>
-        <div class="text">
-            <span>Est. 2015</span>
-            <span>Restaurant & Bar</span>
-        </div>
+    <div class="title-container">
+        <span>About us</span>
     </div>
-    
-    <div class="container-menu-image" id="menu-link">
-        <div class="menu-side">
-            <span>Made with love.</span>
-            <span>Simply delicious</span>
-            <p>I'm a paragraph. Click here to add your own text and edit me. 
-            I’m a great place for you to tell a story and let your users know a little more about you.</p>
-            <a href="menu.html">View Menù</a>
-        </div>
-        <div class="img-side">
+
+    <div class="about-background">
+        <div class="content">
+            <span>The Restaurant</span>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
+                Just click “Edit Text” or double click me to add your own content and make changes to the font. 
+                Feel free to drag and drop me anywhere you like on your page. 
+                I’m a great place for you to tell a story and let your users know a little more about you. 
+                This is a great space to write a long text about your company and your services. 
+                You can use this space to go into a little more detail about your company. 
+                Talk about your team and what services you provide. Tell your visitors the story of how you came 
+                up with the idea for your business and what makes you different from your competitors. 
+                Make your company stand out</p>
         </div>
     </div>
 
-    <div class="restaurant">
-        <div class="container" id="chi-siamo">
-            <span>A Fresh and Seasonal Cuisine</span>
-            <p>I'm a paragraph. Click here to add your own text and edit me. 
-                I’m a great place for you to tell a story and let your users know a little more about you.</p>
-            <a href="about.html">About</a>
+    <div class="kitchen">
+        <div class="img-side">
+
+        </div>
+        <div class="text-side">
+            <span>Our Kitchen</span>
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
+                Just click “Edit Text” or double click me to add your own content and make changes to the font. 
+                Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell 
+                a story and let your users know a little more about you.
+            </p>
         </div>
     </div>
 
