@@ -202,7 +202,87 @@
             margin-top: 12px;
         }
 
+        .title-mobile {
+            display: none;
+        }
+
         /****************/
+
+        @media (max-width: 992px) {
+
+            .title-container {
+                display: none;
+            }
+
+            .title-mobile {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: #F9F6EE;
+                font-family: 'Forum', serif;
+                font-size: 40px;
+                font-weight: 500;
+                text-align: center;
+                background: 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(images/restaurant.jpeg);
+                background-size: cover;
+                width: 100%;
+                height: 30%;
+            }
+
+            .about-background {
+                background-image: none;
+            }
+
+            .content {
+                color: black;
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 16px;
+                margin-top: 32px;
+            }
+
+            .kitchen {
+                flex-direction: column;
+                height: fit-content;
+                margin-top: 16px;
+                width: 100%;
+                margin-bottom: 16px;
+            }
+
+            .text-side {
+                margin-top: 32px;
+                width: 100%;
+            }
+
+            .img-side {
+                height: 350px;
+                background-position: center;
+                width: 100%;
+            }
+
+            .footer {
+                height: fit-content;
+            }
+
+            .footer .info-container {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                height: unset;
+                text-align: center;
+                margin-top: 32px;
+                margin-bottom: 64px;
+            }
+
+            .item {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
 
     </style>
 </head>
@@ -234,6 +314,10 @@
         <span>About us</span>
     </div>
 
+    <div class="title-mobile">
+        <span>Menù</span>
+    </div>
+
     <div class="about-background">
         <div class="content">
             <span>The Restaurant</span>
@@ -251,7 +335,6 @@
 
     <div class="kitchen">
         <div class="img-side">
-
         </div>
         <div class="text-side">
             <span>Our Kitchen</span>
